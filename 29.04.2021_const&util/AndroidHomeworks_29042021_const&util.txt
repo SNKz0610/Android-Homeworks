@@ -1,0 +1,15 @@
+Android Homeworks
+(29/04/2021)
+
+
+Question 1: 
+Trong Kotlin, chúng ta có từ khóa const cũng để khai báo hằng số (VD: const val TAG = "MainActivity"). Hãy tìm hiểu và so sánh const val và val trong Kotlin
+*
+- val: Không cần phải là 1 giá trị cố định sẵn trong code (hard code), tức là có thể định nghĩa trong Runtime. Trình compiler sẽ không đưa giá trị của val vào inline code trong quá trình biên dịch.
+- const val: Phải là giá trị cố định sẵn trong code. Trình compiler sẽ đưa giá trị này vào inline code trong quá trình biên dịch. Nếu không xác định được giá trị cố định này, compiler sẽ báo lỗi.
+
+Question 2:
+Để viết vòng lặp for trong Kotlin, chúng ta còn có từ khóa until (VD: for (i in 0 until 10)), hãy so sánh nó với việc sử dụng khoảng (for (i in 0..10))?
+*
+- Với vòng lặp for (i in 0..n): nó sẽ duyệt tuần tự hết giá trị trong danh sách, đồng nghĩa việc nó sẽ lặp từ i = 0 cho đến i = n
+- Với vòng lặp for (i in 0 util n): nó sẽ duyệt tuần tự gần hết giá trị trong danh sách, đồng nghĩa việc nó sẽ lặp từ i = 0 cho đến i = n -1 
