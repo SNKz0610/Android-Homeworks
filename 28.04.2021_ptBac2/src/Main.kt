@@ -11,30 +11,21 @@ fun main() {
         println("Nhap c:")
         val c: Float? = readLine()?.toFloat()
 
-        // Xu ly a = 0
         if (a == 0.toFloat()) {
             val result: Float = -b?.let { c?.div(it) }!!
             println("> Phuong trinh co 1 nghiem duy nhat x = $result")
             println("=================================")
-        }
-        //Xu ly cac truong hop cua Delta
-        else {
-            //Tinh delta
+        } else {
             val delta1: Float = (b!! * b!!) - (4 * a!! * c!!)
-            
-            //Delta = 0
+
             if (delta1 == 0.toFloat()) {
                 val result1: Float = -b!! / (2 * a!!)
                 println("Phuong trinh co nghiem kep la x1 = x2 = $result1")
                 println("=================================")
-            }
-            //Delta < 0
-            else if (delta1 < 0.toFloat()) {
+            } else if (delta1 < 0.toFloat()) {
                 println("=> Phuong trinh vo nghiem!")
                 println("=================================")
-            }
-            //Delta > 0
-            else if (delta1 > 0.toFloat()) {
+            } else if (delta1 > 0.toFloat()) {
                 println("=>Phuong trinh co 2 nghiem phan biet: ")
                 val sqrtDelta: Float = Math.sqrt(delta1.toDouble()).toFloat()
                 val x1: Float = (-b!! - sqrtDelta) / (2 * a!!)
